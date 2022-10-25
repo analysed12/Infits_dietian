@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="copy the code"
+        android:textColor="@color/black"
+        android:fontFamily="@font/fonts"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:editable="false"
+        android:id="@+id/referal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:textColor="@color/black" />
+    <Button
+        android:id="@+id/copy_btn"
+        android:layout_width="100dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#3ED598"
+        app:tint="@color/white"
+        android:text="Copy"
+        android:textColor="@color/white"/>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.Directions">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDirn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ll_addDirection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/link_img"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/custom_add" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center_vertical"
+            android:paddingStart="10dp"
+            android:text="@string/add_directions"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerDirn"
+        >
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:padding="1dp"
+            android:src="@drawable/upload_icon"
+
+            >
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPLOAD VIDEO"
+            android:textColor="#985FF5"
+            android:layout_marginStart="7dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Optional)"
+            android:textColor="#985FF5"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/link_img"
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:src="@drawable/link_icon"
+        app:layout_constraintTop_toBottomOf="@+id/ll_upload"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="6sp"
+        android:layout_marginStart="45dp"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:id="@+id/finalUpload"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/grad"
+        android:gravity="center"
+        android:text="Upload"
+        android:layout_gravity="end|bottom"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/ll_addDirection"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</LinearLayout>

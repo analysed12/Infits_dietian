@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ClientHealthDetails">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/health_details_background">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Client Health Form :"
+                    android:fontFamily="@font/fonts"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/edit_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:fontFamily="@font/fonts"
+                    android:textSize="18sp"
+                    android:textColor="@color/blue"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="end"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://forms.gle/qNjdAmgKeSAb9Xyz5"
+                android:linksClickable="true"
+                android:autoLink="web"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="15sp"
+                android:textColor="@color/blue"/>
+
+            <TextView
+                android:text="Client Documents"
+                android:textColor="@color/black"
+                style="@style/repeat_overlay_check"
+                android:layout_marginHorizontal="10dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/horizontal_line"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+        <TextView
+            android:text="Document Name"
+            android:textColor="@color/black"
+            style="@style/repeat_overlay_check"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="Upload Date"
+            android:textColor="@color/black"
+            style="@style/repeat_overlay_check"
+            android:layout_weight="1"/>
+    </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/files_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"/>
+            <ImageView
+                android:id="@+id/choose_file"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/add_fab"
+                android:layout_gravity="end|bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"/>
+
+        </LinearLayout>
+</FrameLayout>

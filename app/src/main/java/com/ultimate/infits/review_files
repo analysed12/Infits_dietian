@@ -1,0 +1,48 @@
+toberemoved- AcceptClients.java
+            if you want to fetch data from the database everytime a client is added, then start the activity(AcceptRejectClients.java)
+            else remove, the name, image, plan of that partuclar client from all 6 arrays.
+pending- Upcoming consultationsAdapter.java
+            Check the working of call option for different users and dialog box after the call
+done- add database connectivity to achievement_card to retrieve client count
+done- edit the php and java code in account.java to fetch and save dietitan's about me, location and year of experience
+pending- add recyclerview arrays to Calendar (edit ids in events_in_profile_layout)
+pending- add try method in volley of Calendar
+pending- edit EventListAdapter
+
+26/05/2022
+pending- in 158th line of Calendar.java
+        fetch client_mobile number for consultation link and check if the substring for month and date in EventList constructor is correct
+        write a volley function to update db when the client clicks on notifyme button (If the user changes from off to on, notifyme
+            should be updated as yes, if the user turns off the notify me from on to off, then update it to no)
+            For this, you can use getCal_apt_notifyme() and setCal_apt_notifyme()
+
+        update Eventlist constructor after updating volley
+
+30/05/2022
+done-   in chatlogadapter.java
+        change the status of read messages from u to r if the dietitian opens the message (volley and db)
+             set profile picture in the same file
+pending-in ChatArea, add functionality for selecting picture and docs in attach file imageview
+done-   in ChatArea, save messages to db in void sendMessage() function
+
+
+3
+Done -  in register,allow user to enter only if his/her id is unique.
+        weekSetter's ClientID gets correctly selected is to be checked
+        by default clientID value in consultations is no ClientID selected(in case dietitian selects no name of client)
+
+pending-sql duration(consultations) is int type
+
+
+01/06/2022
+pending- add volley code in PasswordReset to update password of dietitian
+
+pending- check functionality of calendar adapter
+            selected appointments
+             message displaying
+              send message
+
+pending- in client list.java and all clientsfor message .java add volley to return only searched client
+
+pending- in allmessages, add url1 and url2 and check for parameters in php file and in the map string
+        url1->string for fetch_names_for_messages, url2->string for fetch_top_messages

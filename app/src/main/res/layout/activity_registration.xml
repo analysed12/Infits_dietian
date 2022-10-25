@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frame23"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/clientIDTV"
+        android:layout_width="222dp"
+        android:layout_height="79dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/fonts"
+        android:text="SIGN UP"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameReg"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/fonts"
+        android:hint="UserID"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="#FFFFFF"
+        app:hintTextColor="#FFFFFF"
+        app:counterMaxLength="25"
+        app:counterEnabled="true"
+        app:endIconMode="clear_text"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo2"
+            android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordReg"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/fonts"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="#FFFFFF"
+        app:hintTextColor="#FFFFFF"
+        app:counterMaxLength="12"
+        app:counterEnabled="true"
+        app:endIconMode="password_toggle"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:fontFamily="@font/baloo2"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_recheckReg"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/fonts"
+        android:hint="Re-enter Password"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="#FFFFFF"
+        app:hintTextColor="#FFFFFF"
+        app:counterMaxLength="25"
+        app:counterEnabled="true"
+        app:endIconMode="password_toggle"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:fontFamily="@font/baloo2"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameReg"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:fontFamily="@font/fonts"
+            android:hint="Full name"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="#FFFFFF"
+            app:hintTextColor="#FFFFFF"
+            app:counterMaxLength="30"
+            app:counterEnabled="true"
+            app:endIconMode="clear_text"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo2"
+                android:maxLength="30"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/qualificationReg"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:fontFamily="@font/fonts"
+            android:hint="Qualification"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="#FFFFFF"
+            app:hintTextColor="#FFFFFF"
+            app:counterMaxLength="20"
+            app:counterEnabled="true"
+            app:endIconMode="clear_text"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="20"
+                android:fontFamily="@font/baloo2"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailReg"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:fontFamily="@font/fonts"
+            android:hint="Email"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="#FFFFFF"
+            app:hintTextColor="#FFFFFF"
+            app:counterMaxLength="40"
+            app:counterEnabled="true"
+            app:endIconMode="clear_text"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo2"
+                android:maxLength="40"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Male "
+                android:textColor="#FFFFFF"
+                android:id="@+id/maleReg"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Female "
+                android:textColor="#FFFFFF"
+                android:id="@+id/femaleReg"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </RadioGroup>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/locationReg"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:fontFamily="@font/fonts"
+            android:hint="Location"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="#FFFFFF"
+            app:hintTextColor="#FFFFFF"
+            app:counterMaxLength="20"
+            app:counterEnabled="true"
+            app:endIconMode="clear_text"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo2"
+                android:maxLength="20"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ageReg"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:fontFamily="@font/fonts"
+            android:hint="Age"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="#FFFFFF"
+            app:hintTextColor="#FFFFFF"
+            app:counterMaxLength="3"
+            app:counterEnabled="true"
+            app:endIconMode="clear_text"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="3"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mobileReg"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:fontFamily="@font/fonts"
+            android:hint="Mobile number"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="#FFFFFF"
+            app:hintTextColor="#FFFFFF"
+            app:counterMaxLength="20"
+            app:counterEnabled="true"
+            app:endIconMode="clear_text"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:maxLength="20"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp">
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="I agree to Infit's"
+                android:fontFamily="@font/fonts"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/term"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:clickable="true"
+                android:fontFamily="@font/fonts"
+                android:text="Terms and Conditions"
+                android:textColor="#254396"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/registerbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Create an Account"
+                android:background="@color/white"
+                android:fontFamily="@font/fonts"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:textColor="#2F3D96"
+                android:textSize="20sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/memlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already a member? Login"
+            android:fontFamily="@font/fonts"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:textColor="#254396"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

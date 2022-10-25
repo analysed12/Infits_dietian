@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+<group android:checkableBehavior="all">
+<!--    <item-->
+<!--        android:id="@+id/accept_reject_List"-->
+<!--        android:title="Accept/Reject List"-->
+<!--        android:icon="@drawable/ic_baseline_person_24"/>-->
+    <item
+        android:id="@+id/dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/dashboard"/>
+    <item
+        android:id="@+id/message"
+        android:title="Messages"
+        android:icon="@drawable/messages"/>
+    <item
+        android:id="@+id/live"
+        android:title="Live"
+        android:icon="@drawable/live_icon"/>
+<!--    <item-->
+<!--        android:id="@+id/mail"-->
+<!--        android:title="Mail"-->
+<!--        android:icon="@drawable/messages"/>-->
+    <item
+        android:id="@+id/recepies"
+        android:title="Recepies"
+        android:icon="@drawable/recipies_icon"/>
+    <item
+        android:id="@+id/add_client"
+        android:title="Add Client"
+        android:icon="@drawable/add_client"/>
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings"/>
+    <item
+        android:id="@+id/Appointment"
+        android:title="Appointment" />
+</group>
+</menu>

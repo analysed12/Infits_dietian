@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appointment"
+    app:startDestination="@id/selectedAppointment">
+
+    <activity
+        android:id="@+id/selectedAppointment"
+        android:name="com.ultimate.infits.SelectedAppointment"
+        android:label="activity_selected_appointment"
+        tools:layout="@layout/activity_appointment_details" />
+    <fragment
+        android:id="@+id/selectedAppointment_details"
+        android:name="com.ultimate.infits.selectedAppointment_details"
+        android:label="fragment_selected_appointment_details"
+        tools:layout="@layout/fragment_selected_appointment_details" />
+    <fragment
+        android:id="@+id/selectedAppointment_notes"
+        android:name="com.ultimate.infits.selectedAppointment_notes"
+        android:label="fragment_selected_appointment_notes"
+        tools:layout="@layout/fragment_selected_appointment_notes" />
+    <action
+        android:id="@+id/appointment_details"
+        app:destination="@id/selectedAppointment_details"/>
+    <action
+        android:id="@+id/appointment_notes"
+        app:destination="@+id/selectedAppointment_notes"/>
+</navigation>

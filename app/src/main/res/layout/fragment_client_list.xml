@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientList">
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/search_bar_text"-->
+    <!--            android:layout_width="320dp"-->
+    <!--            android:layout_height="30dp"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:layout_marginEnd="10dp"-->
+    <!--            android:background="@drawable/message_box"-->
+    <!--            android:fontFamily="@font/baloo_bhai_2"-->
+    <!--            android:hint="Search"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:visibility="invisible" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/search_client_icon"-->
+    <!--            android:layout_width="20dp"-->
+    <!--            android:layout_height="30dp"-->
+    <!--            android:layout_marginEnd="10dp"-->
+    <!--            android:onClick="searchmethod"-->
+    <!--            android:src="@drawable/search" />-->
+    <!--    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="210dp"
+            android:layout_height="38dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/outline_active"
+            app:cardCornerRadius="17dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/active_pending">
+
+                <RadioGroup
+                    android:id="@+id/toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:checkedButton="@+id/active_btn"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="17dp"
+                        app:cardElevation="0dp">
+
+                        <RadioButton
+                            android:id="@+id/active_btn"
+                            android:layout_width="100dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#8780F8"
+                            android:button="@null"
+                            android:fontFamily="@font/fonts"
+                            android:gravity="center"
+                            android:text="Active"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="17dp"
+                        app:cardElevation="0dp">
+
+                        <RadioButton
+                            android:id="@+id/pending_btn"
+                            android:layout_width="100dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center_vertical"
+                            android:button="@null"
+                            android:fontFamily="@font/fonts"
+                            android:gravity="center"
+                            android:text="Pending"
+                            android:textSize="16sp" />
+                    </androidx.cardview.widget.CardView>
+                </RadioGroup>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/client_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="15dp" />
+    </LinearLayout>
+</FrameLayout>

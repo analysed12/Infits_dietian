@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlankDietChart">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fonts"
+            android:text="You have not \n Created a diet chart yet"
+            android:lineHeight="30dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor=" #FFA381"
+            android:textSize="24sp"
+            android:layout_marginTop="50dp" />
+
+        <Button
+            android:id="@+id/start_diet_plan"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#FFA381"
+            android:fontFamily="@font/fonts"
+            android:gravity="center"
+            android:text="Create a diet plan"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+</FrameLayout>

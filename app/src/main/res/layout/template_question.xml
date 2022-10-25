@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    tools:context=".add_food_item_overlay"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you want to save this as a template"
+            android:textColor="#00007f"
+            android:textSize="30sp"
+            android:lineHeight="30dp"
+            android:fontFamily="@font/fonts"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/overlay_corner"
+                android:alpha="0.8"
+                android:id="@+id/yes"
+                android:text="Yes"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/overlay_corner"
+                android:alpha="0.8"
+                android:id="@+id/no"
+                android:text="No"
+                android:layout_marginStart="25dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recipies">
+
+    <LinearLayout
+        android:id="@+id/appbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dropdown_menu"
+                android:layout_width="44dp"
+                android:layout_height="42dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/circle"
+                android:elevation="15dp"
+                android:padding="5dp"
+                android:src="@drawable/menu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Recipes"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/courseScrollView"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@null"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imgBreak"
+                android:layout_width="215dp"
+                android:layout_height="145dp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:src="@drawable/breakfast"/>
+
+            <ImageView
+                android:id="@+id/lunch"
+                android:layout_width="215dp"
+                android:layout_height="145dp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:src="@drawable/lunch"/>
+
+            <ImageView
+                android:id="@+id/Imgsnacks"
+                android:layout_width="215dp"
+                android:layout_height="145dp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:src="@drawable/snacks"/>
+
+            <ImageView
+                android:id="@+id/dinner"
+                android:layout_width="215dp"
+                android:layout_height="145dp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:src="@drawable/dinner"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/randomText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@+id/courseScrollView"
+        android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_marginStart="25dp"
+                android:layout_gravity="center_vertical"
+                android:text="All Recipies"
+                android:textSize="24sp" />
+        <TextView
+            android:id="@+id/view_all"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="end"
+            android:text="View All"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottombar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/randomText">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/food_items_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/food_item_layout" />
+
+    </ScrollView>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_13sdp"
+        android:background="@drawable/background_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <TextView
+            android:layout_width="225dp"
+            android:layout_height="45dp"
+            android:text="Create Recipe"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/create_recipe_button_design"
+            android:layout_gravity="center"/>
+    </RelativeLayout>
+
+    
+    
+<!--    *************************************-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/menu_icon_action2"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:src="@drawable/ic_baseline_arrow_back_black"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/recepies"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/recepies"-->
+<!--        app:layout_constraintHorizontal_bias="0.22"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/recepies" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/recepies"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:fontFamily="@font/fonts"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:text="Recepies"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="36sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/add_recipes_btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/baloo2"-->
+<!--        android:text="Add Recipes"-->
+
+<!--        android:textColor="#9873FF"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/recepies"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/recepies"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/recepies" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/categories"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/fonts"-->
+<!--        android:text="Categories"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/menu_icon_action2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/recepies" />-->
+
+<!--    <HorizontalScrollView-->
+<!--        android:id="@+id/horizontalScrollView"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:scrollbars="none"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/categories"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/categories">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/breakfast_btn"-->
+<!--                android:layout_width="135dp"-->
+<!--                android:layout_height="144dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:background="@drawable/breakfast" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/lunch_btn"-->
+<!--                android:layout_width="135dp"-->
+<!--                android:layout_height="144dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:background="@drawable/lunch" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/snacks_btn"-->
+<!--                android:layout_width="135dp"-->
+<!--                android:layout_height="144dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:background="@drawable/snacks" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/dinner_btn"-->
+<!--                android:layout_width="135dp"-->
+<!--                android:layout_height="144dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:background="@drawable/dinner" />-->
+<!--        </LinearLayout>-->
+
+
+<!--    </HorizontalScrollView>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/meal_time"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Breakfast Recipes"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/horizontalScrollView"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"-->
+<!--        android:textSize="24sp"-->
+<!--        android:fontFamily="@font/fonts"-->
+<!--        android:textColor="@color/black"/>-->
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/recepies_sec"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/meal_time" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

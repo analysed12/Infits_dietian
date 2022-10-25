@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="setting_option">
+        <item name="android:layout_marginStart">94dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:fontFamily">@font/fonts</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="account_txt_views">
+        <item name="android:fontFamily">@font/fonts</item>
+        <item name="android:textColor">#6A6A6A</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="account_edt_views">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:fontFamily">@font/fonts</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+    </style>
+
+    <style name="client_list_title_txt">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="client_list_details_txt">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="client_title_txt_list">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginEnd">5dp</item>
+    </style>
+
+    <style name="client_details_txt_list">
+        <item name="android:layout_width">89dp</item>
+        <item name="android:layout_height">29dp</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginEnd">5dp</item>
+    </style>
+
+
+    <style name="client_details_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="client_title_txt">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:fontFamily">@font/montserrat</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="repeat_overlay_check">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/fonts</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="day_button">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:gravity">center|bottom</item>
+<!--        <item name="android:background">@drawable/purple_icon</item>-->
+        <item name="android:fontFamily">@font/fonts</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginStart">10dp</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorAccent">#E375B3</item>
+        <item name="android:textColor">#E375B3</item>
+    </style>
+    <style name="diet_chart_week_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/baloo2</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#6F81F8</item>
+        <item name="background">@drawable/floating_message_btn</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="food_spacing">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/fonts</item>
+        <item name="android:layout_marginHorizontal">25dp</item>
+        <item name="android:lineHeight">20dp</item>
+    </style>
+
+    <style name="details_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">25dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/fonts</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="week_style">
+        <item name="android:fontFamily">@font/fonts</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="title_for_nutrients">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/fonts</item>
+        <item name="android:layout_marginStart">25dp</item>
+    </style>
+
+</resources>

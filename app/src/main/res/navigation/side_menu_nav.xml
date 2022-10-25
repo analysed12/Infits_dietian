@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/side_menu_nav"
+    app:startDestination="@id/clientList4">
+
+    <fragment
+        android:id="@+id/clientList4"
+        android:name="com.ultimate.infits.ClientList"
+        android:label="fragment_client_list"
+        tools:layout="@layout/fragment_client_list" >
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment2"
+        android:name="com.ultimate.infits.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment2_to_clientList4"
+            app:destination="@id/clientList4" />
+        <action
+            android:id="@+id/action_dashboardFragment2_to_allMessages2"
+            app:destination="@id/allMessages2" />
+    </fragment>
+    <fragment
+        android:id="@+id/messages2"
+        android:name="com.ultimate.infits.Messages"
+        android:label="fragment_messages"
+        tools:layout="@layout/fragment_messages" />
+    <fragment
+        android:id="@+id/settingMain2"
+        android:name="com.ultimate.infits.SettingMain"
+        android:label="fragment_setting_main"
+        tools:layout="@layout/fragment_setting_main" />
+    <fragment
+        android:id="@+id/calender2"
+        android:name="com.ultimate.infits.Calender"
+        android:label="fragment_calender"
+        tools:layout="@layout/fragment_calender" >
+    </fragment>
+    <fragment
+        android:id="@+id/profile2"
+        android:name="com.ultimate.infits.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <action
+        android:id="@+id/open_client_list"
+        app:destination="@id/clientList4"/>
+    <action
+        android:id="@+id/open_dashboard_fragment"
+        app:destination="@id/dashboardFragment2"/>
+    <action
+        android:id="@+id/open_messages"
+        app:destination="@id/messages2"/>
+    <action
+        android:id="@+id/open_settings"
+        app:destination="@id/settingMain2"/>
+    <action
+        android:id="@+id/open_appointment"
+        app:destination="@id/calender2"/>
+    <action
+        android:id="@+id/open_profile"
+        app:destination="@+id/profile2"/>
+
+    <include app:graph="@navigation/settings_nav" />
+    <include app:graph="@navigation/message_nav" />
+    <fragment
+        android:id="@+id/allMessages2"
+        android:name="com.ultimate.infits.AllMessages"
+        android:label="fragment_all_messages"
+        tools:layout="@layout/fragment_all_messages" />
+
+
+</navigation>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="310dp"
+    android:layout_height="300dp"
+    android:background="#FFFFFF"
+    tools:context=".add_food_item_overlay">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove Item"
+            android:textColor="#00007f"
+            android:textSize="30sp"
+            android:fontFamily="@font/fonts"
+            android:layout_marginLeft="85dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/overlay_corner"
+        android:backgroundTint="#4040F2"
+        android:alpha="0.75"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textAlignment="textStart"
+            android:id="@+id/remove_item_text"
+            android:text="\n1 Bowl of Poha with Vegetables.\n\n1 Bowl of Rice with a Small Bowl of Dal.\n\n1 Bowl of Fresh Fruit Juice.\n\n1 Bowl of Mixed Nuts. "/>
+    </LinearLayout>
+        <Button
+            android:id="@+id/remove_item_done"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/overlay_corner"
+            android:fontFamily="@font/montserrat"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+</FrameLayout>

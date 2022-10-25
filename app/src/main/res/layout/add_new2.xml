@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/remove_item"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/removeitem"
+        android:layout_marginTop="25dp"
+        android:translationZ="1dp"
+        android:layout_marginStart="10dp"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/add_recipies_item"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:hint="Nutritions"
+            android:layout_marginTop="-10dp"
+            android:textSize="24sp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/fonts"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/units"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:hint="units"
+            android:textSize="20sp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/fonts"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="-15dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/food_amount"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/add_amount_items"
+        android:gravity="center"
+        android:padding="10dp"
+        android:hint="1"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+</RelativeLayout>

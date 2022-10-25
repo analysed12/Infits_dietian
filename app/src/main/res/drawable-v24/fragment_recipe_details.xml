@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coursebottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".Fragments.RecipeDetails">
+
+        <EditText
+            android:id="@+id/et_recipeName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/textview_background"
+            android:fontFamily="@font/baloo2"
+            android:gravity="start|center_vertical"
+            android:hint="@string/recipe_name"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_course"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bottomview_bg"
+            android:fontFamily="@font/baloo2"
+            android:gravity="start|center_vertical"
+            android:paddingStart="10dp"
+            android:text="@string/courses"
+            android:textSize="20sp"
+            app:drawableEndCompat="@drawable/down_arrow"
+            />
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/textview_background"
+            android:fontFamily="@font/baloo2"
+            android:gravity="start|center_vertical"
+            android:paddingStart="10dp"
+            android:text="@string/category"
+            android:textSize="20sp"
+            app:drawableEndCompat="@drawable/down_arrow"
+            tools:ignore="Autofill,TextFields" />
+
+        <EditText
+            android:id="@+id/et_prepTime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/textview_background"
+            android:fontFamily="@font/baloo2"
+            android:gravity="start|center_vertical"
+            android:hint="@string/preparation_time"
+            android:paddingStart="10dp"
+            android:textColorHint="#E6757575"
+            android:textSize="20sp"
+            tools:ignore="Autofill,TextFields" />
+
+
+        <EditText
+            android:id="@+id/et_cookingTime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/textview_background"
+            android:fontFamily="@font/baloo2"
+            android:gravity="start|center_vertical"
+            android:hint="@string/cooking_time"
+            android:paddingStart="10dp"
+            android:textColorHint="#E6757575"
+            android:textSize="20sp"
+            tools:ignore="Autofill,TextFields" />
+
+
+
+        <EditText
+            android:id="@+id/et_servings"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/textview_background"
+            android:fontFamily="@font/baloo2"
+            android:gravity="start|center_vertical"
+            android:hint="@string/servings"
+            android:paddingStart="10dp"
+            android:textColorHint="#E6757575"
+            android:textSize="20sp"
+            tools:ignore="Autofill,TextFields" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/nutrients"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+
+        <EditText
+            android:id="@+id/et_calories"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center"
+            android:background="@drawable/textview_background"
+            android:fontFamily="@font/baloo2"
+            android:hint="@string/calories"
+            android:paddingStart="10dp"
+            android:textColorHint="#E6757575"
+            android:textSize="20sp"
+            tools:ignore="Autofill,TextFields" />
+
+        <EditText
+            android:id="@+id/et_proteins"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center"
+            android:background="@drawable/textview_background"
+            android:fontFamily="@font/baloo2"
+            android:gravity="start|center_vertical"
+            android:hint="@string/proteins"
+            android:paddingStart="10dp"
+            android:textColorHint="#E6757575"
+            android:textSize="20sp"
+            tools:ignore="Autofill,TextFields" />
+
+
+
+        <EditText
+            android:id="@+id/et_fats"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center"
+            android:background="@drawable/textview_background"
+            android:fontFamily="@font/baloo2"
+            android:gravity="start|center_vertical"
+            android:hint="@string/fats"
+            android:paddingStart="10dp"
+            android:textColorHint="#E6757575"
+            android:textSize="20sp"
+            tools:ignore="Autofill,TextFields" />
+
+
+        <EditText
+            android:id="@+id/et_Carbs"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center"
+            android:background="@drawable/textview_background"
+            android:fontFamily="@font/baloo2"
+            android:gravity="start|center_vertical"
+            android:hint="@string/carbs"
+            android:paddingStart="10dp"
+            android:textColorHint="#E6757575"
+            android:textSize="20sp"
+            tools:ignore="Autofill,TextFields" />
+
+    <EditText
+        android:id="@+id/et_fibre"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/textview_background"
+        android:fontFamily="@font/baloo2"
+        android:gravity="start|center_vertical"
+        android:hint="@string/fibre"
+        android:paddingStart="10dp"
+        android:textColorHint="#E6757575"
+        android:textSize="20sp"
+        tools:ignore="Autofill,TextFields" />
+
+
+    <TextView
+        android:id="@+id/nextBtn"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/grad"
+        android:gravity="center"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

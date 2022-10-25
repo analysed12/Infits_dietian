@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_nav"
+    app:startDestination="@id/messages">
+
+    <fragment
+        android:id="@+id/messages"
+        android:name="com.ultimate.infits.Messages"
+        android:label="fragment_messages"
+        tools:layout="@layout/fragment_messages" >
+        <action
+            android:id="@+id/action_messages_to_allMessages"
+            app:destination="@id/allMessages"/>
+    </fragment>
+    <fragment
+        android:id="@+id/allMessages"
+        android:name="com.ultimate.infits.AllMessages"
+        android:label="fragment_all_messages"
+        tools:layout="@layout/fragment_all_messages" >
+
+        <action
+            android:id="@+id/action_allMessages_to_messages3"
+            app:destination="@id/messages"
+            app:popUpTo="@id/messages"/>
+    </fragment>
+</navigation>

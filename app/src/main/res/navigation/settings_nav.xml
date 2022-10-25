@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_nav"
+    app:startDestination="@id/settingMain">
+    <fragment
+        android:id="@+id/settingMain"
+        android:name="com.ultimate.infits.SettingMain"
+        android:label="fragment_setting_main"
+        tools:layout="@layout/fragment_setting_main" >
+        <action
+            android:id="@+id/action_settingMain_to_account"
+            app:destination="@id/account" />
+        <action
+            android:id="@+id/action_settingMain_to_notification"
+            app:destination="@id/notification" />
+        <action
+            android:id="@+id/action_settingMain_to_achievement_card"
+            app:destination="@id/achievement_card" />
+        <action
+            android:id="@+id/action_settingMain_to_passwordReset"
+            app:destination="@id/passwordReset" />
+        <action
+            android:id="@+id/action_settingsFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/account"
+        android:name="com.ultimate.infits.Account"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_account_to_settingMain"
+            app:destination="@id/settingMain" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.ultimate.infits.Notification"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" >
+        <action
+            android:id="@+id/action_notification_to_settingMain"
+            app:destination="@id/settingMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/achievement_card"
+        android:name="com.ultimate.infits.achievement_card"
+        android:label="fragment_achievement_card"
+        tools:layout="@layout/fragment_achievement_card" >
+        <action
+            android:id="@+id/action_achievement_card_to_settingMain"
+            app:destination="@id/settingMain"
+            app:popUpTo="@id/settingMain"/>
+    </fragment>
+    <fragment
+        android:id="@+id/passwordReset"
+        android:name="com.ultimate.infits.PasswordReset"
+        android:label="fragment_password_reset"
+        tools:layout="@layout/fragment_password_reset" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.ultimate.infits.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" >
+        <action
+            android:id="@+id/action_helpFragment_to_FAQFragment"
+            app:destination="@id/FAQFragment" />
+        <action
+            android:id="@+id/action_helpFragment_to_settingsFragment"
+            app:destination="@id/settingMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/FAQFragment"
+        android:name="com.ultimate.infits.FAQFragment"
+        android:label="fragment_f_a_q"
+        tools:layout="@layout/fragment_f_a_q" >
+        <action
+            android:id="@+id/action_FAQFragment_to_helpFragment"
+            app:destination="@id/helpFragment"
+            app:popUpTo="@id/settingMain"/>
+    </fragment>
+</navigation>

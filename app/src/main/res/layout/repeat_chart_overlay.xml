@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="220dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Repeat For"
+        android:fontFamily="@font/fonts"
+        android:textColor="#00007F"
+        android:layout_gravity="center_horizontal"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+        <TableRow>
+            <CheckBox
+                android:text="Breakfast"
+                style="@style/repeat_overlay_check" />
+            <CheckBox
+                android:text="Snacks"
+                style="@style/repeat_overlay_check" />
+            <CheckBox
+                android:text="Lunch"
+                style="@style/repeat_overlay_check" />
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:text="Dinner"
+                style="@style/repeat_overlay_check" />
+            <CheckBox
+                android:text="All"
+                style="@style/repeat_overlay_check" />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_marginTop="130dp"
+        android:layout_marginStart="10dp"
+        style="@style/repeat_overlay_check"
+        android:text="Everyday"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="170dp">
+    <ToggleButton
+        android:textOff="M"
+        android:textOn="M"
+        style="@style/day_button"
+        android:textColor="@color/white"/>
+    <ToggleButton
+        android:textOff="T"
+        android:textOn="T"
+        style="@style/day_button"
+        android:textColor="@color/white"/>
+    <ToggleButton
+        android:textOff="W"
+        android:textOn="W"
+        style="@style/day_button"
+        android:textColor="@color/white"/>
+    <ToggleButton
+        android:textOff="T"
+        android:textOn="T"
+        style="@style/day_button"
+        android:textColor="@color/white"/>
+    <ToggleButton
+        android:textOff="F"
+        android:textOn="F"
+        style="@style/day_button"
+        android:textColor="@color/white"/>
+    <ToggleButton
+        android:textOff="S"
+        android:textOn="S"
+        style="@style/day_button"
+        android:textColor="@color/white"/>
+    <ToggleButton
+        android:textOff="S"
+        android:textOn="S"
+        style="@style/day_button"
+        android:textColor="@color/white"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

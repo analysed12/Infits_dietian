@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ClientDetails"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/menu_icon_action"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="25dp"
+        android:src="@drawable/ic_baseline_arrow_back_black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/Client_detials_client_name_top"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/fonts"
+        android:text="Client Details"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/menu_icon_action"
+        app:layout_constraintStart_toEndOf="@+id/menu_icon_action"
+        app:layout_constraintTop_toTopOf="@+id/menu_icon_action" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageView2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/doctor_pic"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Client_detials_client_name_top">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp">
+
+        <TextView
+            android:id="@+id/clientIDTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"/>
+
+        <TextView
+            android:id="@+id/clientemailTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/monileTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/clientemailTV" />
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="190dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="25dp"
+            android:background="@drawable/background_client_details"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    style="@style/client_list_title_txt"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Gender" />
+
+                <TextView
+                    style="@style/client_list_title_txt"
+                    android:layout_marginTop="12dp"
+                    android:text="Age" />
+
+                <TextView
+                    style="@style/client_list_title_txt"
+                    android:layout_marginTop="12dp"
+                    android:text="Phone No" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/genderTV"
+                    style="@style/client_list_details_txt"
+                    android:layout_marginStart="11dp"/>
+
+                <TextView
+                    android:id="@+id/ageTV"
+                    style="@style/client_list_details_txt"/>
+
+                <TextView
+                    android:id="@+id/mobileTV"
+                    style="@style/client_list_details_txt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:id="@+id/HeightTV"
+                    style="@style/client_list_title_txt"
+                    android:text="Height"
+                    android:layout_marginStart="11dp"/>
+                <TextView
+                    android:id="@+id/weightTV"
+                    style="@style/client_list_title_txt"
+                    android:text="Weight" />
+                <TextView
+                    style="@style/client_list_title_txt"
+                    android:text="BMI" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/Height"
+                    style="@style/client_list_details_txt"
+                    android:layout_marginStart="11dp"/>
+                <TextView
+                    android:id="@+id/weight"
+                    style="@style/client_list_details_txt"/>
+                <TextView
+                    android:id="@+id/BMI"
+                    style="@style/client_list_details_txt"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <TextView
+                    style="@style/client_list_title_txt"
+                    android:text="Plan"
+                    android:layout_marginStart="11dp"/>
+
+                <TextView
+                    style="@style/client_list_title_txt"
+                    android:text="Start" />
+
+                <TextView
+                    style="@style/client_list_title_txt"
+                    android:text="End" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/planTV"
+                    style="@style/client_list_details_txt"
+                    android:layout_marginStart="11dp"/>
+
+                <TextView
+                    android:id="@+id/startdateTV"
+                    style="@style/client_list_details_txt"/>
+
+                <TextView
+                    android:id="@+id/enddateTV"
+                    style="@style/client_list_details_txt"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/diet_chart_btn"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/diet_chart_selected" />
+
+            <ImageButton
+                android:id="@+id/chat_btn"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/chat_unselected" />
+
+            <ImageButton
+                android:id="@+id/metrics_btn"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/metrics_unselected" />
+
+            <ImageButton
+                android:id="@+id/tracker_btn"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/tracker_unselected" />
+            <ImageButton
+                android:id="@+id/health_details_btn"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/health_details_unselected" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/horizontal_line"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+        <FrameLayout
+            android:id="@+id/client_details_sec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"/>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

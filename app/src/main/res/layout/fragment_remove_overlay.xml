@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="#FFFFFF"
+    tools:context=".add_food_item_overlay">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:textColor="#00007f"
+            android:textSize="30sp"
+            android:fontFamily="@font/fonts"
+            android:layout_marginLeft="100dp"/>
+
+
+        <Button
+            android:id="@+id/remove_item"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/overlay_corner"
+            android:fontFamily="@font/fonts"
+            android:text="Remove Item"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/remove_section"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/overlay_corner"
+            android:fontFamily="@font/fonts"
+            android:text="Remove Section"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

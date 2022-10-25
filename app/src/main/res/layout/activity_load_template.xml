@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoadTemplate"
+    android:background="@drawable/brand_color_for_diet_chart"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:fontFamily="@font/fonts"
+        android:text="CHOOSE TEMPLATE"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/template_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</LinearLayout>

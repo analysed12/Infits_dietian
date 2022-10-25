@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    tools:context=".add_food_item_overlay"
+    android:padding="10dp">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="10dp">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Enter the Quantity"
+           android:textColor="#00007f"
+           android:textSize="30sp"
+           android:fontFamily="@font/fonts"
+           android:layout_gravity="center"
+           android:gravity="center"/>
+
+       <LinearLayout
+           android:layout_width="250dp"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_gravity="center">
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text="Quantity"
+               android:textColor="#00007f"
+               android:textSize="20sp"
+               android:fontFamily="@font/montserrat"
+               android:layout_gravity="center"
+               android:gravity="start"
+               android:layout_weight="1"
+               android:layout_marginEnd="10dp"/>
+       <EditText
+           android:id="@+id/enter_food_quantity"
+           android:layout_width="0dp"
+           android:layout_height="40dp"
+           android:alpha="0.6"
+           android:hint="Quantity"
+           android:paddingHorizontal="10dp"
+           android:textColorHint="@color/white"
+           android:background="@drawable/overlay_corner"
+           android:backgroundTint="#4040F2"
+           android:fontFamily="@font/montserrat"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:textColor="#FFFFFF"
+           android:textSize="12sp"
+           android:inputType="number"
+           android:layout_weight="1"
+           android:layout_margin="10dp"
+           tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+       </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Unit"
+            android:textColor="#00007f"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/enter_food_quantity_unit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:alpha="0.6"
+            android:hint="Unit"
+            android:textColorHint="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/overlay_corner"
+            android:backgroundTint="#4040F2"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:layout_margin="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="40dp"
+               android:background="@drawable/overlay_corner"
+               android:alpha="0.8"
+               android:id="@+id/food_item_done"
+               android:text="Done"
+               android:layout_marginTop="20dp"
+               android:layout_gravity="center"
+               android:textAllCaps="false"
+               android:textColor="#FFFFFF"/>
+   </LinearLayout>
+
+</FrameLayout>
